@@ -19,3 +19,18 @@ Welcome to the MERN Stack Image Carousel! This project is a web application buil
    ```bash
    git clone https://github.com/tarundeep2610/Image-Carousel
    cd "Image Carousel"
+   ```
+
+2. **Install Dependencies**:
+   -Backend
+      ```bash
+      cd backend
+      npm install
+      ```
+      
+   -Frontend
+      ```bash
+      cd frontend
+      npm install
+      ```
+4.
