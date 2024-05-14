@@ -15,40 +15,53 @@ Welcome to the MERN Stack Image Carousel! This project is a web application buil
 3. React.js frontend for the carousel and user interactions.
 
 ## Setup Instructions
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/tarundeep2610/Image-Carousel
-   cd "Image Carousel"
-   ```
-
-2. **Install Dependencies**:
+   1. **Clone the Repository**:
+      ```bash
+      git clone https://github.com/tarundeep2610/Image-Carousel
+      cd "Image Carousel"
+      ```
    
-   - Backend
-      ```bash
-      cd backend
-      npm install
-      ```
+   2. **Install Dependencies**:
       
-   - Frontend
-      ```bash
-      cd frontend
-      npm install
-      ```
-      
-3. Start the Application
+      - Backend
+         ```bash
+         cd backend
+         npm install
+         ```
+         
+      - Frontend
+         ```bash
+         cd frontend
+         npm install
+         ```
+         
+   3. **Start the Application**
+   
+      - Backend
+         ```bash
+         cd backend
+         node server.js
+         ```
+         
+      - Frontend
+         ```bash
+         cd frontend
+         npm run dev
+         ```
 
-   - Backend
-      ```bash
-      cd backend
-      node server.js
-      ```
-      
-   - Frontend
-      ```bash
-      cd frontend
-      npm run dev
-      ```
+   4. **Access the Application**
+   
+      Open your browser and navigate to http://localhost:5173.
 
-4. Access the Application
+## Usage
 
-   Open your browser and navigate to http://localhost:5173.
+- Add New Image: Use the upload form to add new images with metadata.
+- Reorder Images: Drag and drop to change the sequence.
+- Manual Navigation: Use the next and previous buttons.
+- Adjust Rotation Interval: Modify the automatic rotation interval through slider.
+
+## Technologies Used
+
+- Frontend: ReactJs.
+- Backend: Node.js, Express.js
+- Database: MongoDB
