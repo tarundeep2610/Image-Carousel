@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: black;
+  padding: 1rem;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+
+.carousel-image {
+  object-fit: cover;
+  width: 70rem;
+  height: 470px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
