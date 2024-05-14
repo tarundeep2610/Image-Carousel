@@ -55,8 +55,8 @@ Welcome to the MERN Stack Image Carousel! This project is a web application buil
 
 ## Usage
 
-- Add New Image: Use the upload form to add new images with metadata.
-- Reorder Images: Drag and drop to change the sequence.
+- # Add New Image: Use the upload form to add new images with metadata.
+- # Reorder Images: Drag and drop to change the sequence.
 - Manual Navigation: Use the next and previous buttons.
 - Adjust Rotation Interval: Modify the automatic rotation interval through slider.
 
