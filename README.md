@@ -22,15 +22,33 @@ Welcome to the MERN Stack Image Carousel! This project is a web application buil
    ```
 
 2. **Install Dependencies**:
-   -Backend
+   
+   - Backend
       ```bash
       cd backend
       npm install
       ```
       
-   -Frontend
+   - Frontend
       ```bash
       cd frontend
       npm install
       ```
-4.
+      
+3. Start the Application
+
+   - Backend
+      ```bash
+      cd backend
+      node server.js
+      ```
+      
+   - Frontend
+      ```bash
+      cd frontend
+      npm run dev
+      ```
+
+4. Access the Application
+
+   Open your browser and navigate to http://localhost:5173.
