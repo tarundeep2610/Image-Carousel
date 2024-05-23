@@ -15,7 +15,7 @@ app.use(cors()); // Enable CORS for all routes
 // Multer setup for file upload
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const uploadPath = "uploads/";
+    const uploadPath = "uploads2/";
     fs.mkdirSync(uploadPath, { recursive: true }); // Ensure the upload directory exists
     cb(null, uploadPath);
   },
