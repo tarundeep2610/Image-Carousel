@@ -1,8 +1,10 @@
 const mongoose = require("mongoose"); // Import Mongoose for MongoDB interaction
-
+require('dotenv').config();
 // Connect to MongoDB server
 // Note: Changed 'localhost' to '127.0.0.1' to ensure proper connection
-mongoose.connect("mongodb://127.0.0.1:27017/imageCarouselDB2", {
+
+// mongoose.connect("mongodb://127.0.0.1:27017/imageCarouselDB2", {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true, // Use the new URL parser to handle connection strings
   useUnifiedTopology: true, // Use the new Server Discover and Monitoring engine
 });

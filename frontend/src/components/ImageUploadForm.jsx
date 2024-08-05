@@ -7,7 +7,8 @@ function ImageUploadForm({ setIsOpen, fetchImages }) {
   const [image, setImage] = useState(null); // State for the image file
   const uploadInput = useRef(); // Reference to the file input element
 
-  const baseUrl = "http://127.0.0.1:3000";
+  // const baseUrl = "http://127.0.0.1:3000";
+  const baseUrl = import.meta.env.VITE_BACKEND_URL; // Base URL for API requests
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value); // Update title state on input change

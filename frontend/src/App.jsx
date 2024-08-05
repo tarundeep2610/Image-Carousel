@@ -10,7 +10,9 @@ function App() {
   // State variables
   const [images, setImages] = useState([]); // State to hold images
   const [interval, setIntervalValue] = useState(3000); // State for carousel interval (default: 3000ms)
-  const baseUrl = "http://127.0.0.1:3000"; // Base URL for API requests
+  // const baseUrl = "http://127.0.0.1:3000"; // Base URL for API requests
+  const baseUrl = import.meta.env.VITE_BACKEND_URL; // Base URL for API requests
+  console.log(import.meta.env.BACKEND_URL, )
 
   // Modal state variables
   const [isOpen, setIsOpen] = useState(false); // State for modal visibility

@@ -9,7 +9,9 @@ import { DndProvider } from "react-dnd";
 import { FaTrash } from "react-icons/fa";
 
 const MyCarousel = ({ data, setData, deleteImage, interval }) => {
-  const baseUrl = "http://127.0.0.1:3000";
+  // const baseUrl = "http://127.0.0.1:3000";
+  const baseUrl = import.meta.env.VITE_BACKEND_URL; // Base URL for API requests
+
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -113,7 +115,7 @@ const MyCarousel = ({ data, setData, deleteImage, interval }) => {
         <div className="absolute w-full h-full"></div>
         <img
           className="carousel-image"
-          src={`http://localhost:3000/${image.filePath}`}
+          src={`${import.meta.env.VITE_BACKEND_URL}/${image.filePath}`}
           alt={`Slide ${index}`}
         />
         <div className="image-info absolute bottom-0 text-white text-center w-full py-2">
@@ -132,12 +134,14 @@ const MyCarousel = ({ data, setData, deleteImage, interval }) => {
     );
   };
 
+  console.log(data, "data")
+
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="w-full px-4">
         <Slider {...settings}>
-          {data &&
-            data.map((image, index) => (
+          {data && data.length>0 &&
+            data?.map((image, index) => (
               <Image key={index} image={image} index={index} />
             ))}
         </Slider>

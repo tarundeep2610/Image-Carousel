@@ -4,7 +4,7 @@ const cors = require("cors"); // Import CORS to allow cross-origin requests
 const path = require("path"); // Import Path module for handling file paths
 const fs = require("fs"); // Import File System module to interact with the file system
 const app = express(); // Create an Express application
-const port = 3000; // Define the port number for the server
+const port = 8000; // Define the port number for the server
 const db = require("./db.js"); // Import database connection module
 const Image = require("./models/image.js"); // Import Image model
 
@@ -15,7 +15,7 @@ app.use(cors()); // Enable CORS for all routes
 // Multer setup for file upload
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const uploadPath = "uploads2/";
+    const uploadPath = "uploads/";
     fs.mkdirSync(uploadPath, { recursive: true }); // Ensure the upload directory exists
     cb(null, uploadPath);
   },
